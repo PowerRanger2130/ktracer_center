@@ -7,11 +7,13 @@ import 'package:ktracer_center/ai_chat/widgets/ai_chat_panel.dart';
 import 'package:ktracer_center/app_state.dart';
 import 'package:ktracer_center/devices/device_preset.dart';
 import 'package:ktracer_center/models/net_device.dart';
+import 'package:ktracer_center/services/update_service.dart';
 import 'package:ktracer_center/widgets/device_details/device_details.dart';
 import 'package:ktracer_center/pages/home_page.dart';
 import 'package:ktracer_center/pages/network_services_page.dart';
 import 'package:ktracer_center/pages/topology_page.dart';
 import 'package:ktracer_center/widgets/title_bar_content.dart';
+import 'package:ktracer_center/widgets/update_dialog.dart';
 import 'package:provider/provider.dart';
 import 'package:strworks/widgets/fluent/fluent_page_data.dart';
 import 'package:strworks/widgets/fluent/fluent_widgets.dart';
@@ -37,6 +39,7 @@ void main() async {
     MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (context) => AppState()),
+        ChangeNotifierProvider(create: (context) => UpdateService()),
         ChangeNotifierProxyProvider<AppState, AiChatState>(
           create: (context) => AiChatState(context.read<AppState>()),
           update: (context, appState, previous) =>
@@ -57,11 +60,32 @@ class MainApp extends StatefulWidget {
 
 class _MainAppState extends State<MainApp> {
   late Future<void> _initFuture;
+  bool _updateDialogShown = false;
 
   @override
   void initState() {
     super.initState();
-    _initFuture = context.read<AppState>().init();
+    _initFuture = _initialize();
+  }
+
+  Future<void> _initialize() async {
+    await context.read<AppState>().init();
+    await context.read<UpdateService>().init();
+  }
+
+  /// Show update dialog after app is ready
+  void _showUpdateDialogIfAvailable(BuildContext context) {
+    if (_updateDialogShown) return;
+
+    final updateService = context.read<UpdateService>();
+    if (updateService.hasUpdate) {
+      _updateDialogShown = true;
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (mounted) {
+          showUpdateDialog(context);
+        }
+      });
+    }
   }
 
   Widget _buildAddDeviceDropdown(BuildContext context) {
@@ -318,6 +342,9 @@ class _MainAppState extends State<MainApp> {
           if (snapshot.connectionState != ConnectionState.done) {
             return Center(child: ProgressRing());
           }
+
+          // Show update dialog if an update is available
+          _showUpdateDialogIfAvailable(context);
 
           return Stack(
             children: [

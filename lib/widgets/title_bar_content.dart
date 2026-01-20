@@ -2,6 +2,7 @@ import 'package:fluent_ui/fluent_ui.dart';
 import 'package:ktracer_center/ai_chat/widgets/ai_chat_button.dart';
 import 'package:ktracer_center/widgets/avatar_button.dart';
 import 'package:ktracer_center/widgets/connection_status_indicator.dart';
+import 'package:ktracer_center/widgets/update_dialog.dart';
 
 class TitleBarContent extends StatelessWidget {
   const TitleBarContent({
@@ -34,6 +35,8 @@ class TitleBarContent extends StatelessWidget {
         const SizedBox(width: 16),
         const ConnectionStatusIndicator(),
         Spacer(),
+        const UpdateIndicator(),
+        const SizedBox(width: 8),
         const AiChatButton(),
         const SizedBox(width: 8),
         AvatarButton(),
