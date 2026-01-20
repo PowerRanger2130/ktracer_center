@@ -1,0 +1,753 @@
+{
+    "$schema": "device_presets_schema.json",
+    "_comment": "Shared device presets for ktracer_center (Dart) and ktracer_client (Python)",
+    "_version": "1.0.0",
+    "presets": [
+        {
+            "id": 1,
+            "name": "Catalyst 2950 24-port",
+            "sku": "Catalyst 2950",
+            "category": "Switch",
+            "handlerType": "l2",
+            "driverType": "ios",
+            "hasSsh": false,
+            "color": "#66BB6A50",
+            "portCount": 24,
+            "portType": "FastEthernet",
+            "uplinkCount": 2,
+            "uplinkType": "GigabitEthernet",
+            "etherchannelLimit": 8,
+            "capabilities": [
+                "vlan",
+                "vtp-v1",
+                "vtp-v2",
+                "etherchannel",
+                "lacp",
+                "pagp",
+                "stp-pvst"
+            ],
+            "lockedInterfacePatterns": [],
+            "lockedVlans": [],
+            "lockedInterfaceReason": null
+        },
+        {
+            "id": 2,
+            "name": "Catalyst 2950 48-port",
+            "sku": "Catalyst 2950",
+            "category": "Switch",
+            "handlerType": "l2",
+            "driverType": "ios",
+            "hasSsh": false,
+            "color": "#66BB6A50",
+            "portCount": 48,
+            "portType": "FastEthernet",
+            "uplinkCount": 2,
+            "uplinkType": "GigabitEthernet",
+            "etherchannelLimit": 8,
+            "capabilities": [
+                "vlan",
+                "vtp-v1",
+                "vtp-v2",
+                "etherchannel",
+                "lacp",
+                "pagp",
+                "stp-pvst"
+            ],
+            "lockedInterfacePatterns": [],
+            "lockedVlans": [],
+            "lockedInterfaceReason": null
+        },
+        {
+            "id": 3,
+            "name": "Catalyst 2960",
+            "sku": "Catalyst 2960",
+            "category": "Switch",
+            "handlerType": "l2",
+            "driverType": "ios",
+            "hasSsh": true,
+            "color": "#26C6DA50",
+            "portCount": 24,
+            "portType": "FastEthernet",
+            "uplinkCount": 2,
+            "uplinkType": "GigabitEthernet",
+            "etherchannelLimit": 8,
+            "capabilities": [
+                "vlan",
+                "vtp-v1",
+                "vtp-v2",
+                "etherchannel",
+                "lacp",
+                "pagp",
+                "stp-pvst",
+                "stp-rapid-pvst",
+                "protected-port"
+            ],
+            "lockedInterfacePatterns": [],
+            "lockedVlans": [],
+            "lockedInterfaceReason": null
+        },
+        {
+            "id": 4,
+            "name": "Catalyst 3550",
+            "sku": "Catalyst 3550",
+            "category": "L3 Switch",
+            "handlerType": "l2",
+            "driverType": "ios",
+            "hasSsh": false,
+            "color": "#5C6BC050",
+            "portCount": 24,
+            "portType": "FastEthernet",
+            "uplinkCount": 2,
+            "uplinkType": "GigabitEthernet",
+            "etherchannelLimit": 8,
+            "capabilities": [
+                "vlan",
+                "vtp-v1",
+                "vtp-v2",
+                "etherchannel",
+                "lacp",
+                "pagp",
+                "stp-pvst",
+                "stp-rapid-pvst",
+                "stp-mst",
+                "rip",
+                "ospf",
+                "eigrp",
+                "hsrp",
+                "vrf",
+                "acl",
+                "dhcp-server",
+                "subinterfaces"
+            ],
+            "lockedInterfacePatterns": [],
+            "lockedVlans": [],
+            "lockedInterfaceReason": null
+        },
+        {
+            "id": 5,
+            "name": "Catalyst 3560X",
+            "sku": "Catalyst 3560X",
+            "category": "L3 Switch",
+            "handlerType": "l2",
+            "driverType": "ios",
+            "hasSsh": true,
+            "color": "#9575CD50",
+            "portCount": 24,
+            "portType": "GigabitEthernet",
+            "uplinkCount": 2,
+            "uplinkType": "TenGigabitEthernet",
+            "etherchannelLimit": 8,
+            "capabilities": [
+                "vlan",
+                "vtp-v1",
+                "vtp-v2",
+                "vtp-v3",
+                "etherchannel",
+                "lacp",
+                "stp-pvst",
+                "stp-rapid-pvst",
+                "stp-mst",
+                "rip",
+                "ospf",
+                "eigrp",
+                "bgp",
+                "hsrp",
+                "vrf",
+                "acl",
+                "acl-v6",
+                "dhcp-server",
+                "subinterfaces"
+            ],
+            "lockedInterfacePatterns": [],
+            "lockedVlans": [],
+            "lockedInterfaceReason": null
+        },
+        {
+            "id": 6,
+            "name": "Catalyst 4948",
+            "sku": "Catalyst 4948",
+            "category": "L3 Switch",
+            "handlerType": "l2",
+            "driverType": "ios",
+            "hasSsh": true,
+            "color": "#7E57C250",
+            "portCount": 48,
+            "portType": "GigabitEthernet",
+            "uplinkCount": 2,
+            "uplinkType": "TenGigabitEthernet",
+            "etherchannelLimit": 8,
+            "capabilities": [
+                "vlan",
+                "vtp-v1",
+                "vtp-v2",
+                "vtp-v3",
+                "etherchannel",
+                "lacp",
+                "stp-pvst",
+                "stp-rapid-pvst",
+                "stp-mst",
+                "rip",
+                "ospf",
+                "eigrp",
+                "bgp",
+                "hsrp",
+                "vrf",
+                "acl",
+                "acl-v6",
+                "dhcp-server",
+                "subinterfaces"
+            ],
+            "lockedInterfacePatterns": [],
+            "lockedVlans": [],
+            "lockedInterfaceReason": null
+        },
+        {
+            "id": 7,
+            "name": "ME 3400E",
+            "sku": "ME 3400E",
+            "category": "Router",
+            "handlerType": "l3",
+            "driverType": "ios",
+            "hasSsh": false,
+            "color": "#FFB30050",
+            "portCount": 24,
+            "portType": "FastEthernet",
+            "uplinkCount": 2,
+            "uplinkType": "GigabitEthernet",
+            "etherchannelLimit": 8,
+            "capabilities": [
+                "vlan",
+                "vtp-v1",
+                "vtp-v2",
+                "etherchannel",
+                "lacp",
+                "pagp",
+                "stp-pvst",
+                "stp-rapid-pvst",
+                "protected-port",
+                "subinterfaces",
+                "dhcp-server",
+                "dhcp-relay",
+                "hsrp",
+                "vrf",
+                "acl"
+            ],
+            "lockedInterfacePatterns": [],
+            "lockedVlans": [],
+            "lockedInterfaceReason": null
+        },
+        {
+            "id": 8,
+            "name": "ISR 2811",
+            "sku": "ISR 2811",
+            "category": "Router",
+            "handlerType": "l3",
+            "driverType": "ios",
+            "hasSsh": false,
+            "color": "#EF535050",
+            "interfaces": [
+                {
+                    "name": "FastEthernet 0/0",
+                    "type": "routed"
+                },
+                {
+                    "name": "FastEthernet 0/1",
+                    "type": "routed"
+                },
+                {
+                    "name": "FastEthernet 0/1.80",
+                    "type": "subinterface"
+                }
+            ],
+            "etherchannelLimit": 0,
+            "capabilities": [
+                "rip",
+                "ospf",
+                "eigrp",
+                "bgp",
+                "hsrp",
+                "vrf",
+                "acl",
+                "acl-v6",
+                "dhcp-server",
+                "dhcp-relay",
+                "nat",
+                "vpn",
+                "voip",
+                "pppoe",
+                "aaa",
+                "radius",
+                "tacacs",
+                "subinterfaces",
+                "static-routing"
+            ],
+            "lockedInterfacePatterns": [
+                "FastEthernet 0/1"
+            ],
+            "lockedVlans": [],
+            "lockedInterfaceReason": "Reserved for switch trunk connection (management)"
+        },
+        {
+            "id": 9,
+            "name": "ISR 2811 + Serial",
+            "sku": "ISR 2811",
+            "category": "Router",
+            "handlerType": "l3",
+            "driverType": "ios",
+            "hasSsh": false,
+            "color": "#EF535050",
+            "interfaces": [
+                {
+                    "name": "FastEthernet 0/0",
+                    "type": "routed"
+                },
+                {
+                    "name": "FastEthernet 0/1",
+                    "type": "routed"
+                },
+                {
+                    "name": "FastEthernet 0/1.80",
+                    "type": "subinterface"
+                },
+                {
+                    "name": "Serial 0/0/0",
+                    "type": "serial"
+                },
+                {
+                    "name": "Serial 0/0/1",
+                    "type": "serial"
+                }
+            ],
+            "etherchannelLimit": 0,
+            "capabilities": [
+                "rip",
+                "ospf",
+                "eigrp",
+                "bgp",
+                "hsrp",
+                "vrf",
+                "acl",
+                "acl-v6",
+                "dhcp-server",
+                "dhcp-relay",
+                "nat",
+                "vpn",
+                "voip",
+                "pppoe",
+                "aaa",
+                "radius",
+                "tacacs",
+                "subinterfaces",
+                "static-routing"
+            ],
+            "lockedInterfacePatterns": [
+                "FastEthernet 0/1"
+            ],
+            "lockedVlans": [],
+            "lockedInterfaceReason": "Reserved for switch trunk connection (management)"
+        },
+        {
+            "id": 10,
+            "name": "ISR 2811 + Switch Module",
+            "sku": "ISR 2811",
+            "category": "Router",
+            "handlerType": "l3",
+            "driverType": "ios",
+            "hasSsh": false,
+            "color": "#EF535050",
+            "interfaces": [
+                {
+                    "name": "FastEthernet 0/0",
+                    "type": "routed"
+                },
+                {
+                    "name": "FastEthernet 0/1",
+                    "type": "routed"
+                },
+                {
+                    "name": "FastEthernet 0/3/0",
+                    "type": "switchport"
+                },
+                {
+                    "name": "FastEthernet 0/3/1",
+                    "type": "switchport"
+                },
+                {
+                    "name": "FastEthernet 0/3/2",
+                    "type": "switchport"
+                },
+                {
+                    "name": "FastEthernet 0/3/3",
+                    "type": "switchport"
+                }
+            ],
+            "etherchannelLimit": 4,
+            "capabilities": [
+                "rip",
+                "ospf",
+                "eigrp",
+                "bgp",
+                "hsrp",
+                "vrf",
+                "acl",
+                "acl-v6",
+                "dhcp-server",
+                "dhcp-relay",
+                "nat",
+                "vpn",
+                "voip",
+                "pppoe",
+                "aaa",
+                "radius",
+                "tacacs",
+                "subinterfaces",
+                "static-routing"
+            ],
+            "lockedInterfacePatterns": [
+                "FastEthernet 0/3/3"
+            ],
+            "lockedVlans": [],
+            "lockedInterfaceReason": "Reserved for management"
+        },
+        {
+            "id": 11,
+            "name": "ISR 2811 + Switch + Serial",
+            "sku": "ISR 2811",
+            "category": "Router",
+            "handlerType": "l3",
+            "driverType": "ios",
+            "hasSsh": false,
+            "color": "#EF535050",
+            "interfaces": [
+                {
+                    "name": "FastEthernet 0/0",
+                    "type": "routed"
+                },
+                {
+                    "name": "FastEthernet 0/1",
+                    "type": "routed"
+                },
+                {
+                    "name": "FastEthernet 0/3/0",
+                    "type": "switchport"
+                },
+                {
+                    "name": "FastEthernet 0/3/1",
+                    "type": "switchport"
+                },
+                {
+                    "name": "FastEthernet 0/3/2",
+                    "type": "switchport"
+                },
+                {
+                    "name": "FastEthernet 0/3/3",
+                    "type": "switchport"
+                },
+                {
+                    "name": "Serial 0/0/0",
+                    "type": "serial"
+                },
+                {
+                    "name": "Serial 0/0/1",
+                    "type": "serial"
+                }
+            ],
+            "etherchannelLimit": 4,
+            "capabilities": [
+                "rip",
+                "ospf",
+                "eigrp",
+                "bgp",
+                "hsrp",
+                "vrf",
+                "acl",
+                "acl-v6",
+                "dhcp-server",
+                "dhcp-relay",
+                "nat",
+                "vpn",
+                "voip",
+                "pppoe",
+                "aaa",
+                "radius",
+                "tacacs",
+                "subinterfaces",
+                "static-routing"
+            ],
+            "lockedInterfacePatterns": [
+                "FastEthernet 0/3/3"
+            ],
+            "lockedVlans": [],
+            "lockedInterfaceReason": "Reserved for management"
+        },
+        {
+            "id": 12,
+            "name": "ISR 2800",
+            "sku": "ISR 2800",
+            "category": "Router",
+            "handlerType": "l3",
+            "driverType": "ios",
+            "hasSsh": false,
+            "color": "#4FC3F750",
+            "interfaces": [
+                {
+                    "name": "FastEthernet 0/0",
+                    "type": "routed"
+                },
+                {
+                    "name": "FastEthernet 0/1",
+                    "type": "routed"
+                },
+                {
+                    "name": "FastEthernet 0/1.80",
+                    "type": "subinterface"
+                }
+            ],
+            "etherchannelLimit": 0,
+            "capabilities": [
+                "rip",
+                "ospf",
+                "eigrp",
+                "bgp",
+                "hsrp",
+                "vrf",
+                "acl",
+                "acl-v6",
+                "dhcp-server",
+                "dhcp-relay",
+                "nat",
+                "vpn",
+                "voip",
+                "pppoe",
+                "aaa",
+                "radius",
+                "tacacs",
+                "subinterfaces",
+                "static-routing"
+            ],
+            "lockedInterfacePatterns": [
+                "FastEthernet 0/1"
+            ],
+            "lockedVlans": [],
+            "lockedInterfaceReason": "Reserved for switch trunk connection (management)"
+        },
+        {
+            "id": 13,
+            "name": "ISR 2800 + Serial",
+            "sku": "ISR 2800",
+            "category": "Router",
+            "handlerType": "l3",
+            "driverType": "ios",
+            "hasSsh": false,
+            "color": "#AED58150",
+            "interfaces": [
+                {
+                    "name": "FastEthernet 0/0",
+                    "type": "routed"
+                },
+                {
+                    "name": "FastEthernet 0/1",
+                    "type": "routed"
+                },
+                {
+                    "name": "FastEthernet 0/1.80",
+                    "type": "subinterface"
+                },
+                {
+                    "name": "Serial 0/1/0",
+                    "type": "serial"
+                },
+                {
+                    "name": "Serial 0/1/1",
+                    "type": "serial"
+                }
+            ],
+            "etherchannelLimit": 0,
+            "capabilities": [
+                "rip",
+                "ospf",
+                "eigrp",
+                "bgp",
+                "hsrp",
+                "vrf",
+                "acl",
+                "acl-v6",
+                "dhcp-server",
+                "dhcp-relay",
+                "nat",
+                "vpn",
+                "voip",
+                "pppoe",
+                "aaa",
+                "radius",
+                "tacacs",
+                "subinterfaces",
+                "static-routing"
+            ],
+            "lockedInterfacePatterns": [
+                "FastEthernet 0/1"
+            ],
+            "lockedVlans": [],
+            "lockedInterfaceReason": "Reserved for switch trunk connection (management)"
+        },
+        {
+            "id": 14,
+            "name": "ISR 4431",
+            "sku": "ISR 4431",
+            "category": "Router",
+            "handlerType": "l3",
+            "driverType": "ios",
+            "hasSsh": true,
+            "color": "#78909C50",
+            "interfaces": [
+                {
+                    "name": "GigabitEthernet 0/0/0",
+                    "type": "routed"
+                },
+                {
+                    "name": "GigabitEthernet 0/0/1",
+                    "type": "routed"
+                },
+                {
+                    "name": "GigabitEthernet 0/0/2",
+                    "type": "routed"
+                },
+                {
+                    "name": "GigabitEthernet 0/0/3",
+                    "type": "routed"
+                }
+            ],
+            "etherchannelLimit": 0,
+            "capabilities": [
+                "rip",
+                "ospf",
+                "eigrp",
+                "bgp",
+                "hsrp",
+                "vrf",
+                "acl",
+                "acl-v6",
+                "dhcp-server",
+                "dhcp-relay",
+                "nat",
+                "vpn",
+                "voip",
+                "pppoe",
+                "aaa",
+                "radius",
+                "tacacs",
+                "subinterfaces",
+                "netconf",
+                "restconf",
+                "static-routing"
+            ],
+            "lockedInterfacePatterns": [],
+            "lockedVlans": [],
+            "lockedInterfaceReason": null
+        },
+        {
+            "id": 100,
+            "name": "EVE-NG IOL Switch",
+            "sku": "IOL L2",
+            "category": "Switch",
+            "handlerType": "l2",
+            "driverType": "ios",
+            "hasSsh": true,
+            "color": "#42A5F550",
+            "portCount": 8,
+            "portType": "Ethernet",
+            "slotsPerModule": 4,
+            "etherchannelLimit": 4,
+            "capabilities": [
+                "vlan",
+                "vtp-v1",
+                "vtp-v2",
+                "etherchannel",
+                "lacp",
+                "pagp",
+                "stp-pvst",
+                "stp-rapid-pvst"
+            ],
+            "lockedInterfacePatterns": [],
+            "lockedVlans": [],
+            "lockedInterfaceReason": null
+        },
+        {
+            "id": 101,
+            "name": "EVE-NG IOL Router",
+            "sku": "IOL L3",
+            "category": "Router",
+            "handlerType": "l3",
+            "driverType": "ios",
+            "hasSsh": true,
+            "color": "#66BB6A50",
+            "portCount": 4,
+            "portType": "Ethernet",
+            "slotsPerModule": 4,
+            "etherchannelLimit": 0,
+            "capabilities": [
+                "rip",
+                "ospf",
+                "eigrp",
+                "bgp",
+                "hsrp",
+                "vrf",
+                "acl",
+                "acl-v6",
+                "dhcp-server",
+                "dhcp-relay",
+                "nat",
+                "subinterfaces",
+                "static-routing"
+            ],
+            "lockedInterfacePatterns": [],
+            "lockedVlans": [],
+            "lockedInterfaceReason": null
+        }
+    ],
+    "categories": {
+        "Switch": {
+            "description": "Layer 2 switches",
+            "presetIds": [
+                1,
+                2,
+                3,
+                100
+            ]
+        },
+        "L3 Switch": {
+            "description": "Layer 3 switches with routing capabilities",
+            "presetIds": [
+                4,
+                5,
+                6
+            ]
+        },
+        "Router": {
+            "description": "Routers and routing devices",
+            "presetIds": [
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                101
+            ]
+        }
+    },
+    "validation": {
+        "maxEtherchannelMembersDefault": 8,
+        "maxVlans": 4094,
+        "reservedVlans": [
+            1,
+            1002,
+            1003,
+            1004,
+            1005
+        ],
+        "maxChannelGroups": 48
+    }
+}

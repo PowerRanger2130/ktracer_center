@@ -1,0 +1,186 @@
+Date : 2025-11-27 16:50:20
+Directory : f:\Projects\ktracer_center
+Total : 96 files,  10150 codes, 731 comments, 1370 blanks, all 12251 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| Dart       |         35 |      7,074 |        350 |        767 |      8,191 |
+| Python     |          7 |      1,000 |        117 |        226 |      1,343 |
+| C++        |         16 |        618 |        137 |        193 |        948 |
+| CMake      |          8 |        473 |          0 |         92 |        565 |
+| XML        |         10 |        470 |         53 |         12 |        535 |
+| JSON       |          4 |        248 |          0 |          4 |        252 |
+| MS SQL     |          3 |        141 |         52 |         38 |        231 |
+| Swift      |          6 |         69 |          7 |         21 |         97 |
+| YAML       |          2 |         25 |          0 |          6 |         31 |
+| HTML       |          1 |         19 |         15 |          5 |         39 |
+| Properties |          2 |          8 |          0 |          2 |         10 |
+| Markdown   |          2 |          5 |          0 |          4 |          9 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                     | files      | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                        |         96 |     10,150 |        731 |      1,370 |     12,251 |
+| . (Files)                                                                                |          3 |         27 |          0 |          8 |         35 |
+| android                                                                                  |          9 |         74 |         51 |         11 |        136 |
+| android (Files)                                                                          |          1 |          3 |          0 |          1 |          4 |
+| android\app                                                                              |          7 |         66 |         51 |          9 |        126 |
+| android\app\src                                                                          |          7 |         66 |         51 |          9 |        126 |
+| android\app\src\debug                                                                    |          1 |          3 |          4 |          1 |          8 |
+| android\app\src\main                                                                     |          5 |         60 |         43 |          7 |        110 |
+| android\app\src\main (Files)                                                             |          1 |         34 |         11 |          1 |         46 |
+| android\app\src\main\res                                                                 |          4 |         26 |         32 |          6 |         64 |
+| android\app\src\main\res\drawable                                                        |          1 |          4 |          7 |          2 |         13 |
+| android\app\src\main\res\drawable-v21                                                    |          1 |          4 |          7 |          2 |         13 |
+| android\app\src\main\res\values                                                          |          1 |          9 |          9 |          1 |         19 |
+| android\app\src\main\res\values-night                                                    |          1 |          9 |          9 |          1 |         19 |
+| android\app\src\profile                                                                  |          1 |          3 |          4 |          1 |          8 |
+| android\gradle                                                                           |          1 |          5 |          0 |          1 |          6 |
+| android\gradle\wrapper                                                                   |          1 |          5 |          0 |          1 |          6 |
+| ios                                                                                      |          8 |        229 |          4 |         13 |        246 |
+| ios\Runner                                                                               |          7 |        222 |          2 |          9 |        233 |
+| ios\Runner (Files)                                                                       |          2 |         13 |          0 |          3 |         16 |
+| ios\RunnerTests                                                                          |          1 |          7 |          2 |          4 |         13 |
+| ios\Runner\Assets.xcassets                                                               |          3 |        148 |          0 |          4 |        152 |
+| ios\Runner\Assets.xcassets\AppIcon.appiconset                                            |          1 |        122 |          0 |          1 |        123 |
+| ios\Runner\Assets.xcassets\LaunchImage.imageset                                          |          2 |         26 |          0 |          3 |         29 |
+| ios\Runner\Base.lproj                                                                    |          2 |         61 |          2 |          2 |         65 |
+| lib                                                                                      |         42 |      8,074 |        467 |        993 |      9,534 |
+| lib (Files)                                                                              |          2 |        362 |         18 |         52 |        432 |
+| lib\controllers                                                                          |          2 |        425 |         76 |         84 |        585 |
+| lib\database                                                                             |          1 |        195 |         21 |         37 |        253 |
+| lib\devices                                                                              |          4 |        496 |         38 |         57 |        591 |
+| lib\models                                                                               |          3 |        392 |         42 |         63 |        497 |
+| lib\network                                                                              |          4 |        115 |          0 |         22 |        137 |
+| lib\other-side                                                                           |          7 |      1,000 |        117 |        226 |      1,343 |
+| lib\pages                                                                                |          3 |        766 |         15 |         48 |        829 |
+| lib\utils                                                                                |          1 |        405 |         38 |         75 |        518 |
+| lib\widgets                                                                              |         15 |      3,918 |        102 |        329 |      4,349 |
+| lib\widgets (Files)                                                                      |          5 |        475 |          3 |         46 |        524 |
+| lib\widgets\device_details                                                               |         10 |      3,443 |         99 |        283 |      3,825 |
+| linux                                                                                    |          9 |        376 |         42 |         94 |        512 |
+| linux (Files)                                                                            |          1 |        104 |          0 |         25 |        129 |
+| linux\flutter                                                                            |          4 |        135 |          9 |         27 |        171 |
+| linux\runner                                                                             |          4 |        137 |         33 |         42 |        212 |
+| macos                                                                                    |          6 |        461 |          5 |         17 |        483 |
+| macos\Flutter                                                                            |          1 |         20 |          3 |          4 |         27 |
+| macos\Runner                                                                             |          4 |        434 |          0 |          9 |        443 |
+| macos\Runner (Files)                                                                     |          2 |         23 |          0 |          7 |         30 |
+| macos\RunnerTests                                                                        |          1 |          7 |          2 |          4 |         13 |
+| macos\Runner\Assets.xcassets                                                             |          1 |         68 |          0 |          1 |         69 |
+| macos\Runner\Assets.xcassets\AppIcon.appiconset                                          |          1 |         68 |          0 |          1 |         69 |
+| macos\Runner\Base.lproj                                                                  |          1 |        343 |          0 |          1 |        344 |
+| migrations                                                                               |          3 |        141 |         52 |         38 |        231 |
+| web                                                                                      |          2 |         54 |         15 |          6 |         75 |
+| windows                                                                                  |         14 |        714 |         95 |        190 |        999 |
+| windows (Files)                                                                          |          1 |         89 |          0 |         20 |        109 |
+| windows\flutter                                                                          |          4 |        148 |          9 |         29 |        186 |
+| windows\runner                                                                           |          9 |        477 |         86 |        141 |        704 |
++------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                 | language   | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| f:\Projects\ktracer_center\README.md                                                     | Markdown   |          2 |          0 |          2 |          4 |
+| f:\Projects\ktracer_center\analysis_options.yaml                                         | YAML       |          1 |          0 |          1 |          2 |
+| f:\Projects\ktracer_center\android\app\src\debug\AndroidManifest.xml                     | XML        |          3 |          4 |          1 |          8 |
+| f:\Projects\ktracer_center\android\app\src\main\AndroidManifest.xml                      | XML        |         34 |         11 |          1 |         46 |
+| f:\Projects\ktracer_center\android\app\src\main\res\drawable-v21\launch_background.xml   | XML        |          4 |          7 |          2 |         13 |
+| f:\Projects\ktracer_center\android\app\src\main\res\drawable\launch_background.xml       | XML        |          4 |          7 |          2 |         13 |
+| f:\Projects\ktracer_center\android\app\src\main\res\values-night\styles.xml              | XML        |          9 |          9 |          1 |         19 |
+| f:\Projects\ktracer_center\android\app\src\main\res\values\styles.xml                    | XML        |          9 |          9 |          1 |         19 |
+| f:\Projects\ktracer_center\android\app\src\profile\AndroidManifest.xml                   | XML        |          3 |          4 |          1 |          8 |
+| f:\Projects\ktracer_center\android\gradle.properties                                     | Properties |          3 |          0 |          1 |          4 |
+| f:\Projects\ktracer_center\android\gradle\wrapper\gradle-wrapper.properties              | Properties |          5 |          0 |          1 |          6 |
+| f:\Projects\ktracer_center\ios\RunnerTests\RunnerTests.swift                             | Swift      |          7 |          2 |          4 |         13 |
+| f:\Projects\ktracer_center\ios\Runner\AppDelegate.swift                                  | Swift      |         12 |          0 |          2 |         14 |
+| f:\Projects\ktracer_center\ios\Runner\Assets.xcassets\AppIcon.appiconset\Contents.json   | JSON       |        122 |          0 |          1 |        123 |
+| f:\Projects\ktracer_center\ios\Runner\Assets.xcassets\LaunchImage.imageset\Contents.json | JSON       |         23 |          0 |          1 |         24 |
+| f:\Projects\ktracer_center\ios\Runner\Assets.xcassets\LaunchImage.imageset\README.md     | Markdown   |          3 |          0 |          2 |          5 |
+| f:\Projects\ktracer_center\ios\Runner\Base.lproj\LaunchScreen.storyboard                 | XML        |         36 |          1 |          1 |         38 |
+| f:\Projects\ktracer_center\ios\Runner\Base.lproj\Main.storyboard                         | XML        |         25 |          1 |          1 |         27 |
+| f:\Projects\ktracer_center\ios\Runner\Runner-Bridging-Header.h                           | C++        |          1 |          0 |          1 |          2 |
+| f:\Projects\ktracer_center\lib\app_state.dart                                            | Dart       |        176 |         17 |         36 |        229 |
+| f:\Projects\ktracer_center\lib\controllers\device_controller.dart                        | Dart       |         82 |          7 |         15 |        104 |
+| f:\Projects\ktracer_center\lib\controllers\lock_service.dart                             | Dart       |        343 |         69 |         69 |        481 |
+| f:\Projects\ktracer_center\lib\database\database.dart                                    | Dart       |        195 |         21 |         37 |        253 |
+| f:\Projects\ktracer_center\lib\devices\device_preset.dart                                | Dart       |        382 |         11 |         28 |        421 |
+| f:\Projects\ktracer_center\lib\devices\devices.dart                                      | Dart       |          3 |          0 |          1 |          4 |
+| f:\Projects\ktracer_center\lib\devices\lab_inventory.dart                                | Dart       |         64 |         19 |         18 |        101 |
+| f:\Projects\ktracer_center\lib\devices\switchport.dart                                   | Dart       |         47 |          8 |         10 |         65 |
+| f:\Projects\ktracer_center\lib\main.dart                                                 | Dart       |        186 |          1 |         16 |        203 |
+| f:\Projects\ktracer_center\lib\models\models.dart                                        | Dart       |          2 |          0 |          1 |          3 |
+| f:\Projects\ktracer_center\lib\models\net_device.dart                                    | Dart       |        268 |         24 |         39 |        331 |
+| f:\Projects\ktracer_center\lib\models\project.dart                                       | Dart       |        122 |         18 |         23 |        163 |
+| f:\Projects\ktracer_center\lib\network\ipv4.dart                                         | Dart       |         38 |          0 |          9 |         47 |
+| f:\Projects\ktracer_center\lib\network\port.dart                                         | Dart       |         14 |          0 |          2 |         16 |
+| f:\Projects\ktracer_center\lib\network\server.dart                                       | Dart       |         46 |          0 |          8 |         54 |
+| f:\Projects\ktracer_center\lib\network\vlan.dart                                         | Dart       |         17 |          0 |          3 |         20 |
+| f:\Projects\ktracer_center\lib\other-side\client.py                                      | Python     |        508 |         71 |         91 |        670 |
+| f:\Projects\ktracer_center\lib\other-side\manage.py                                      | Python     |         19 |          0 |          5 |         24 |
+| f:\Projects\ktracer_center\lib\other-side\manager.py                                     | Python     |         88 |         18 |         42 |        148 |
+| f:\Projects\ktracer_center\lib\other-side\server.py                                      | Python     |        308 |         28 |         69 |        405 |
+| f:\Projects\ktracer_center\lib\other-side\status.py                                      | Python     |         17 |          0 |          6 |         23 |
+| f:\Projects\ktracer_center\lib\other-side\tunnel.py                                      | Python     |         32 |          0 |          4 |         36 |
+| f:\Projects\ktracer_center\lib\other-side\update.py                                      | Python     |         28 |          0 |          9 |         37 |
+| f:\Projects\ktracer_center\lib\pages\devices_page.dart                                   | Dart       |         45 |          1 |          8 |         54 |
+| f:\Projects\ktracer_center\lib\pages\home_page.dart                                      | Dart       |        679 |         12 |         32 |        723 |
+| f:\Projects\ktracer_center\lib\pages\network_page.dart                                   | Dart       |         42 |          2 |          8 |         52 |
+| f:\Projects\ktracer_center\lib\utils\synced_controller.dart                              | Dart       |        405 |         38 |         75 |        518 |
+| f:\Projects\ktracer_center\lib\widgets\add_device_dialog.dart                            | Dart       |        182 |          2 |         14 |        198 |
+| f:\Projects\ktracer_center\lib\widgets\avatar_button.dart                                | Dart       |         80 |          0 |          7 |         87 |
+| f:\Projects\ktracer_center\lib\widgets\avatar_flyout.dart                                | Dart       |         98 |          1 |          5 |        104 |
+| f:\Projects\ktracer_center\lib\widgets\device_details\channel_group_list.dart            | Dart       |        493 |          9 |         41 |        543 |
+| f:\Projects\ktracer_center\lib\widgets\device_details\device_details.dart                | Dart       |        401 |          4 |         17 |        422 |
+| f:\Projects\ktracer_center\lib\widgets\device_details\mac_address_multi_select.dart      | Dart       |        310 |         10 |         27 |        347 |
+| f:\Projects\ktracer_center\lib\widgets\device_details\port_list.dart                     | Dart       |        618 |         41 |         57 |        716 |
+| f:\Projects\ktracer_center\lib\widgets\device_details\port_management.dart               | Dart       |        661 |         23 |         50 |        734 |
+| f:\Projects\ktracer_center\lib\widgets\device_details\port_multi_select.dart             | Dart       |        301 |          6 |         29 |        336 |
+| f:\Projects\ktracer_center\lib\widgets\device_details\synced_toggle_switch.dart          | Dart       |         35 |          0 |          5 |         40 |
+| f:\Projects\ktracer_center\lib\widgets\device_details\vlan_list.dart                     | Dart       |        204 |          3 |         23 |        230 |
+| f:\Projects\ktracer_center\lib\widgets\device_details\vlan_management.dart               | Dart       |        183 |          1 |         16 |        200 |
+| f:\Projects\ktracer_center\lib\widgets\device_details\vlan_multi_select.dart             | Dart       |        237 |          2 |         18 |        257 |
+| f:\Projects\ktracer_center\lib\widgets\ip_address_field.dart                             | Dart       |         79 |          0 |         17 |         96 |
+| f:\Projects\ktracer_center\lib\widgets\title_bar_content.dart                            | Dart       |         36 |          0 |          3 |         39 |
+| f:\Projects\ktracer_center\linux\CMakeLists.txt                                          | CMake      |        104 |          0 |         25 |        129 |
+| f:\Projects\ktracer_center\linux\flutter\CMakeLists.txt                                  | CMake      |         79 |          0 |         10 |         89 |
+| f:\Projects\ktracer_center\linux\flutter\generated_plugin_registrant.cc                  | C++        |         27 |          4 |          5 |         36 |
+| f:\Projects\ktracer_center\linux\flutter\generated_plugin_registrant.h                   | C++        |          5 |          5 |          6 |         16 |
+| f:\Projects\ktracer_center\linux\flutter\generated_plugins.cmake                         | CMake      |         24 |          0 |          6 |         30 |
+| f:\Projects\ktracer_center\linux\runner\CMakeLists.txt                                   | CMake      |         21 |          0 |          6 |         27 |
+| f:\Projects\ktracer_center\linux\runner\main.cc                                          | C++        |          5 |          0 |          2 |          7 |
+| f:\Projects\ktracer_center\linux\runner\my_application.cc                                | C++        |        104 |         26 |         29 |        159 |
+| f:\Projects\ktracer_center\linux\runner\my_application.h                                 | C++        |          7 |          7 |          5 |         19 |
+| f:\Projects\ktracer_center\macos\Flutter\GeneratedPluginRegistrant.swift                 | Swift      |         20 |          3 |          4 |         27 |
+| f:\Projects\ktracer_center\macos\RunnerTests\RunnerTests.swift                           | Swift      |          7 |          2 |          4 |         13 |
+| f:\Projects\ktracer_center\macos\Runner\AppDelegate.swift                                | Swift      |         11 |          0 |          3 |         14 |
+| f:\Projects\ktracer_center\macos\Runner\Assets.xcassets\AppIcon.appiconset\Contents.json | JSON       |         68 |          0 |          1 |         69 |
+| f:\Projects\ktracer_center\macos\Runner\Base.lproj\MainMenu.xib                          | XML        |        343 |          0 |          1 |        344 |
+| f:\Projects\ktracer_center\macos\Runner\MainFlutterWindow.swift                          | Swift      |         12 |          0 |          4 |         16 |
+| f:\Projects\ktracer_center\migrations\001_simplified_schema.sql                          | MS SQL     |        103 |         32 |         22 |        157 |
+| f:\Projects\ktracer_center\migrations\002_device_locks.sql                               | MS SQL     |         33 |         15 |         12 |         60 |
+| f:\Projects\ktracer_center\migrations\003_device_locks_real_id.sql                       | MS SQL     |          5 |          5 |          4 |         14 |
+| f:\Projects\ktracer_center\pubspec.yaml                                                  | YAML       |         24 |          0 |          5 |         29 |
+| f:\Projects\ktracer_center\web\index.html                                                | HTML       |         19 |         15 |          5 |         39 |
+| f:\Projects\ktracer_center\web\manifest.json                                             | JSON       |         35 |          0 |          1 |         36 |
+| f:\Projects\ktracer_center\windows\CMakeLists.txt                                        | CMake      |         89 |          0 |         20 |        109 |
+| f:\Projects\ktracer_center\windows\flutter\CMakeLists.txt                                | CMake      |         98 |          0 |         12 |        110 |
+| f:\Projects\ktracer_center\windows\flutter\generated_plugin_registrant.cc                | C++        |         21 |          4 |          5 |         30 |
+| f:\Projects\ktracer_center\windows\flutter\generated_plugin_registrant.h                 | C++        |          5 |          5 |          6 |         16 |
+| f:\Projects\ktracer_center\windows\flutter\generated_plugins.cmake                       | CMake      |         24 |          0 |          6 |         30 |
+| f:\Projects\ktracer_center\windows\runner\CMakeLists.txt                                 | CMake      |         34 |          0 |          7 |         41 |
+| f:\Projects\ktracer_center\windows\runner\flutter_window.cpp                             | C++        |         58 |          8 |         16 |         82 |
+| f:\Projects\ktracer_center\windows\runner\flutter_window.h                               | C++        |         20 |          5 |          9 |         34 |
+| f:\Projects\ktracer_center\windows\runner\main.cpp                                       | C++        |         36 |          4 |         12 |         52 |
+| f:\Projects\ktracer_center\windows\runner\resource.h                                     | C++        |          9 |          6 |          2 |         17 |
+| f:\Projects\ktracer_center\windows\runner\utils.cpp                                      | C++        |         54 |          2 |         10 |         66 |
+| f:\Projects\ktracer_center\windows\runner\utils.h                                        | C++        |          8 |          6 |          6 |         20 |
+| f:\Projects\ktracer_center\windows\runner\win32_window.cpp                               | C++        |        210 |         24 |         55 |        289 |
+| f:\Projects\ktracer_center\windows\runner\win32_window.h                                 | C++        |         48 |         31 |         24 |        103 |
+| Total                                                                                    |            |     10,150 |        731 |      1,370 |     12,251 |
++------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
