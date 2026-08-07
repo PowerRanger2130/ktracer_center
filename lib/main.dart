@@ -14,6 +14,7 @@ import 'package:ktracer_center/pages/home_page.dart';
 import 'package:ktracer_center/pages/network_services_page.dart';
 import 'package:ktracer_center/pages/topology_page.dart';
 import 'package:ktracer_center/widgets/title_bar_content.dart';
+import 'package:strworks/app_runtime_config.dart';
 import 'package:strworks/strworks.dart';
 import 'package:provider/provider.dart';
 import 'package:strworks/widgets/fluent/fluent_page_data.dart';
@@ -21,6 +22,7 @@ import 'package:strworks/widgets/fluent/fluent_widgets.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 void main() async {
+  await StrworksAppRuntimeConfig.load();
   WidgetsFlutterBinding.ensureInitialized();
 
   await Supabase.initialize(
