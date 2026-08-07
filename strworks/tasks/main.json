@@ -1,0 +1,36 @@
+{
+  "name": "ktracer_center-main",
+  "enabled": true,
+  "actions": [
+    {
+      "type": "github_fetch",
+      "path": "{releaseRoot}/apps/ktracer_center",
+      "branch": "main"
+    },
+    {
+      "type": "build",
+      "tool": "flutter",
+      "workingDirectory": "{projectsRoot}/apps/ktracer_center",
+      "args": [
+        "build",
+        "windows",
+        "--dart-define=STRWORKS_REALTIME=false"
+      ]
+    },
+    {
+      "type": "publish",
+      "requiresApproval": true,
+      "channel": "release"
+    }
+  ],
+  "conditions": [
+    {
+      "type": "webhook",
+      "events": [
+        "push"
+      ],
+      "repository": "ktracer_center",
+      "branch": "main"
+    }
+  ]
+}

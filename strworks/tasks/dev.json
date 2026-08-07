@@ -1,0 +1,31 @@
+{
+  "name": "ktracer_center-dev",
+  "enabled": true,
+  "actions": [
+    {
+      "type": "github_fetch",
+      "path": "{projectsRoot}/apps/ktracer_center",
+      "branch": "dev"
+    },
+    {
+      "type": "build",
+      "tool": "flutter",
+      "workingDirectory": "{projectsRoot}/apps/ktracer_center",
+      "args": [
+        "build",
+        "windows",
+        "--dart-define=STRWORKS_REALTIME=false"
+      ]
+    }
+  ],
+  "conditions": [
+    {
+      "type": "webhook",
+      "events": [
+        "push"
+      ],
+      "repository": "ktracer_center",
+      "branch": "dev"
+    }
+  ]
+}

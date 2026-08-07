@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "appId": "ktracer_center",
+  "displayName": "Ktracer Center",
+  "version": "1.0.0",
+  "githubRepo": "PowerRanger2130/ktracer_center",
+  "baseUrl": "sggnet.xyz",
+  "database": {
+    "name": "ktracer_center_prod"
+  },
+  "messaging": {
+    "required": true,
+    "namespace": "ktracer_center"
+  },
+  "realtime": {
+    "required": false
+  },
+  "fileStorageSubdir": "ktracer_center",
+  "mockRelease": {
+    "enabled": true,
+    "strategy": "full_copy"
+  }
+}
