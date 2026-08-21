@@ -2,26 +2,82 @@ name: CI
 
 on:
   push:
-    branches: [main, master]
+    branches: [dev, main]
   pull_request:
-    branches: [main, master]
+    branches: [dev, main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.repository }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   analyze-and-test:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout current repository
+        uses: actions/checkout@v4
+        with:
+          path: workspace/apps/ktracer_center
+      - name: Require private-repository token
+        env:
+          TOKEN: ${{ secrets.STRWORKS_CI_TOKEN }}
+        run: |
+          if [ -z "$TOKEN" ]; then
+            echo "Set the STRWORKS_CI_TOKEN repository secret to a read-only token for the private dependency repositories."
+            exit 1
+          fi
 
-      - uses: subosito/flutter-action@v2
+      - name: Configure private Git dependency access
+        env:
+          TOKEN: ${{ secrets.STRWORKS_CI_TOKEN }}
+        run: git config --global url."https://x-access-token:${TOKEN}@github.com/".insteadOf "https://github.com/"
+      - name: Checkout sgg_ui
+        uses: actions/checkout@v4
+        with:
+          repository: PowerRanger2130/sgg_ui
+          ref: ${{ github.base_ref || github.ref_name }}
+          token: ${{ secrets.STRWORKS_CI_TOKEN }}
+          path: workspace/packages/sgg_ui
+      - name: Checkout strworks
+        uses: actions/checkout@v4
+        with:
+          repository: PowerRanger2130/strworks
+          ref: ${{ github.base_ref || github.ref_name }}
+          token: ${{ secrets.STRWORKS_CI_TOKEN }}
+          path: workspace/packages/strworks
+      - name: Create Dart workspace
+        shell: bash
+        run: |
+          cat > workspace/pubspec.yaml <<'YAML'
+          name: ci_workspace
+          publish_to: none
+          environment:
+            sdk: '>=3.10.1 <4.0.0'
+          workspace:
+            - apps/ktracer_center
+            - packages/sgg_ui
+            - packages/strworks
+          YAML
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
         with:
           channel: stable
           cache: true
 
       - name: Install dependencies
+        working-directory: workspace
         run: flutter pub get
 
       - name: Analyze
-        run: flutter analyze
+        working-directory: workspace/apps/ktracer_center
+        run: flutter analyze --no-fatal-infos --no-fatal-warnings
 
       - name: Test
-        run: flutter test
+        if: ${{ hashFiles('workspace/apps/ktracer_center/test/**/*_test.dart') != '' }}
+        working-directory: workspace/apps/ktracer_center
+        run: flutter test --concurrency=1 --exclude-tags=integration

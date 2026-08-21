@@ -17,7 +17,7 @@ import 'package:ktracer_center/widgets/title_bar_content.dart';
 import 'package:strworks/app_runtime_config.dart';
 import 'package:strworks/strworks.dart';
 import 'package:provider/provider.dart';
-import 'package:strworks/widgets/fluent/fluent_page_data.dart';
+import 'package:strworks/widgets/page_data.dart';
 import 'package:strworks/widgets/fluent/fluent_widgets.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
@@ -186,10 +186,9 @@ class _MainAppState extends State<MainApp> {
   }
 
   /// Build a single device navigation item
-  FluentPageData _buildDevicePageData(NetDevice device, AppState appState) {
-    return FluentPageData(
+  PageData _buildDevicePageData(NetDevice device, AppState appState) {
+    return PageData(
       title: device.hostname,
-      hideBackground: true,
       icon: device.category == NetDeviceCategory.Switch
           ? FluentIcons.switch_widget
           : FluentIcons.branch_fork2,
@@ -315,9 +314,9 @@ class _MainAppState extends State<MainApp> {
 
   /// Build device navigation items grouped by device group
   /// Devices are sorted by group name first, then by sort order, then by hostname
-  List<FluentPageData> _buildDeviceNavigationItems(AppState appState) {
+  List<PageData> _buildDeviceNavigationItems(AppState appState) {
     final devicesByGroup = appState.devicesByGroup;
-    final items = <FluentPageData>[];
+    final items = <PageData>[];
 
     // Sort devices within each group by sortOrder, then hostname
     List<NetDevice> sortDevices(List<NetDevice> devices) {
@@ -344,10 +343,10 @@ class _MainAppState extends State<MainApp> {
       final groupDevices = sortDevices(devicesByGroup[groupName]!);
 
       // Add a separator before each group (acts as visual divider)
-      items.add(FluentPageData.separator);
+      items.add(PageData.separator);
 
       // Add a header item showing the group name
-      items.add(FluentPageData.header(groupName, icon: FluentIcons.folder));
+      items.add(PageData.header(groupName, icon: FluentIcons.folder));
 
       for (final device in groupDevices) {
         items.add(_buildDevicePageData(device, appState));
@@ -412,23 +411,22 @@ class _MainAppState extends State<MainApp> {
                             controller: _navController,
                             orientation: FluentNavigationOrientation.vertical,
                             items: [
-                              FluentPageData(
+                              PageData(
                                 child: HomePage(),
                                 title: "Project",
                                 icon: FluentIcons.fabric_folder,
                               ),
-                              FluentPageData(
+                              PageData(
                                 child: TopologyPage(),
                                 title: "Topology",
                                 icon: FluentIcons.org,
                               ),
-                              FluentPageData(
+                              PageData(
                                 child: NetworkServicesPage(),
-                                hideBackground: true,
                                 title: "Network Services",
                                 icon: FluentIcons.server_enviroment,
                               ),
-                              FluentPageData(
+                              PageData(
                                 children: _buildDeviceNavigationItems(appState),
                                 headerActionBuilder: _buildAddDeviceDropdown,
                                 isAction: true,
@@ -437,8 +435,8 @@ class _MainAppState extends State<MainApp> {
                               ),
                             ],
                             footerItems: [
-                              FluentPageData.separator,
-                              FluentPageData(
+                              PageData.separator,
+                              PageData(
                                 child: SettingsPage(),
                                 title: "Settings",
                                 icon: FluentIcons.settings,

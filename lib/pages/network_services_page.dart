@@ -31,68 +31,59 @@ class _NetworkServicesPageState extends State<NetworkServicesPage> {
 
     const noColor = WidgetStateColor.transparent;
 
-    return TabView(
-      currentIndex: _currentTab,
-      onChanged: (index) => setState(() => _currentTab = index),
-      header: const SizedBox(width: 12),
-      tabs: [
-        Tab(
-          text: const Text('HSRP'),
-          body: FluentWidgets.mica(
-            child: HsrpTab(project: project, devices: appState.devices),
+    return FluentWidgets.scaffold(
+      showBackground: true,
+      content: Expanded(
+        child: TabView(
+        currentIndex: _currentTab,
+        onChanged: (index) => setState(() => _currentTab = index),
+        header: const SizedBox(width: 12),
+        tabs: [
+          Tab(
+            text: const Text('HSRP'),
+            body: HsrpTab(project: project, devices: appState.devices),
+            backgroundColor: noColor,
+            selectedBackgroundColor: noColor,
           ),
-          backgroundColor: noColor,
-          selectedBackgroundColor: noColor,
-        ),
-        Tab(
-          text: const Text('OSPF'),
-          body: FluentWidgets.mica(
-            child: OspfTab(project: project, devices: appState.devices),
+          Tab(
+            text: const Text('OSPF'),
+            body: OspfTab(project: project, devices: appState.devices),
+            backgroundColor: noColor,
+            selectedBackgroundColor: noColor,
           ),
-          backgroundColor: noColor,
-          selectedBackgroundColor: noColor,
-        ),
-        Tab(
-          text: const Text('EIGRP'),
-          body: FluentWidgets.mica(
-            child: EigrpTab(project: project, devices: appState.devices),
+          Tab(
+            text: const Text('EIGRP'),
+            body: EigrpTab(project: project, devices: appState.devices),
+            backgroundColor: noColor,
+            selectedBackgroundColor: noColor,
           ),
-          backgroundColor: noColor,
-          selectedBackgroundColor: noColor,
-        ),
-        Tab(
-          text: const Text('BGP'),
-          body: FluentWidgets.mica(
-            child: BgpTab(project: project, devices: appState.devices),
+          Tab(
+            text: const Text('BGP'),
+            body: BgpTab(project: project, devices: appState.devices),
+            backgroundColor: noColor,
+            selectedBackgroundColor: noColor,
           ),
-          backgroundColor: noColor,
-          selectedBackgroundColor: noColor,
-        ),
-        Tab(
-          text: const Text('VRF'),
-          body: FluentWidgets.mica(
-            child: VrfTab(project: project, devices: appState.devices),
+          Tab(
+            text: const Text('VRF'),
+            body: VrfTab(project: project, devices: appState.devices),
+            backgroundColor: noColor,
+            selectedBackgroundColor: noColor,
           ),
-          backgroundColor: noColor,
-          selectedBackgroundColor: noColor,
-        ),
-        Tab(
-          text: const Text('Spanning Tree'),
-          body: FluentWidgets.mica(
-            child: SpanningTreeTab(project: project, devices: appState.devices),
+          Tab(
+            text: const Text('Spanning Tree'),
+            body: SpanningTreeTab(project: project, devices: appState.devices),
+            backgroundColor: noColor,
+            selectedBackgroundColor: noColor,
           ),
-          backgroundColor: noColor,
-          selectedBackgroundColor: noColor,
-        ),
-        Tab(
-          text: const Text('VTP'),
-          body: FluentWidgets.mica(
-            child: VtpTab(project: project, devices: appState.devices),
+          Tab(
+            text: const Text('VTP'),
+            body: VtpTab(project: project, devices: appState.devices),
+            backgroundColor: noColor,
+            selectedBackgroundColor: noColor,
           ),
-          backgroundColor: noColor,
-          selectedBackgroundColor: noColor,
+        ],
         ),
-      ],
+      ),
     );
   }
 }

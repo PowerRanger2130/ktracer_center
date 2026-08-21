@@ -1,6 +1,7 @@
 import 'package:fluent_ui/fluent_ui.dart';
 import 'package:ktracer_center/app_state.dart';
 import 'package:provider/provider.dart';
+import 'package:strworks/widgets/fluent/fluent_widgets.dart';
 
 class SettingsPage extends StatelessWidget {
   const SettingsPage({super.key});
@@ -10,15 +11,12 @@ class SettingsPage extends StatelessWidget {
     final appState = context.watch<AppState>();
     final typography = FluentTheme.of(context).typography;
 
-    return SingleChildScrollView(
-      padding: const EdgeInsets.all(24),
-      child: Column(
+    return FluentWidgets.scaffold(
+      header: 'Settings',
+      showBackground: true,
+      content: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text('Settings', style: typography.title),
-          const SizedBox(height: 24),
-
-          // ── Debug section ────────────────────────────────────────────────
           Text('Debug', style: typography.subtitle),
           const SizedBox(height: 12),
           Card(

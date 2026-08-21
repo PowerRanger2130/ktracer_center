@@ -17,18 +17,13 @@ dependencies:
   path_provider: ^2.1.2
   package_info_plus: any
   window_manager: ^0.5.1
-  strworks:
-    git:
-      url: https://github.com/PowerRanger2130/strworks.git
-      ref: main
+  strworks: any
   supabase_flutter: ^2.10.3
   provider: ^6.1.5+1
   vector_math: ^2.2.0
   grpc: ^5.1.0
   protobuf: ^6.0.0
   fixnum: ^1.1.0
-  dart_layer:
-    path: ../netmiko-abstraction/dart_layer
   uuid: ^4.5.1
   google_generative_ai: ^0.4.6
 
@@ -37,6 +32,8 @@ dev_dependencies:
     sdk: flutter
   flutter_lints: any
   msix: ^3.16.12
+
+resolution: workspace
 
 flutter:
   uses-material-design: true
